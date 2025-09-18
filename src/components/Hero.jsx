@@ -57,16 +57,15 @@ const Hero = () => {
         start: startValue,
         end: endValue,
         scrub: true,
-        pin : true,
-        
+        pin: true,
       },
     });
 
     videoRef.current.onloadedmetadata = () => {
       tl.to(videoRef.current, {
-        currentTime : videoRef.current.duration
-      })
-    }
+        currentTime: videoRef.current.duration,
+      });
+    };
   }, []);
   return (
     <>
@@ -113,7 +112,7 @@ const Hero = () => {
         </div>
       </section>
 
-      <div className="video inset-0">
+      <div className="absolute video inset-0">
         <video
           src="/videos/output.mp4"
           muted
