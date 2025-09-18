@@ -30,7 +30,7 @@ const Art = () => {
 
     .to('.masked-img', {
       scale : 1.3,
-      maskPosition : 'center',
+      maskPosition : 'center center',
       maskSize : '400%',
       duration : 1,
       ease : 'power1.inOut'
@@ -66,7 +66,7 @@ const Art = () => {
             <img
               src="/images/under-img.jpg"
               alt="cocktail"
-              className="abs-center masked-img size full object-contain"
+              className="abs-center masked-img size-full object-contain"
             />
           </div>
 

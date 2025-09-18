@@ -56,6 +56,7 @@ body {
     mask-image: url("/images/mask-img.png");
     mask-repeat: no-repeat;
     mask-position: center;
+    -webkit-mask-position : center;
     mask-size: 50%;
 }
 
@@ -310,7 +311,7 @@ body {
         }
 
         .cocktail {
-            @apply flex-center mt-10;
+            @apply flex-center mt-10 px-12;
 
             img {
                 @apply object-contain h-[60vh];
